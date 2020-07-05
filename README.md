@@ -1,1 +1,1 @@
-# leetcode
+# HackerEarth practice problems
