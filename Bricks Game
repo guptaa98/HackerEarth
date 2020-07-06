@@ -1,0 +1,26 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	int N;
+	scanf("%d",&N);
+	int count=0,i=1;
+	while (count<=N)
+	{
+		count+=i;
+		if (count>=N)
+		{
+			printf("Patlu\n");
+			break;
+		}
+		count+=(2*i);
+		if (count>=N)
+		{
+			printf("Motu\n");
+			break;
+		}
+		i++;
+	}
+}
