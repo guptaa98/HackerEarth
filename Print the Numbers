@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+vector<int> A;
+int main()
+{
+    int N,i,input;
+    cin>>N;
+	for (i=0;i<N;i++) 
+	{
+		cin>>input;
+		A.push_back(input);
+	}
+	for (i=0;i<N;i++) 
+	{
+		cout <<A[i]<<" ";
+    }
+}
