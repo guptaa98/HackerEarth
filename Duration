@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	vector<int>T;
+	int n,i,time,d;
+	cin>>n;
+	d=0;
+	int h[n],m[n];
+	for(i=0;i<n;i++)
+	{
+		for(int j=0;j<4;j++)
+		{
+			cin>>time;
+			T.push_back(time);
+		}
+		d=((T[2]*60)+T[3])-((T[0]*60)+T[1]);
+		h[i]=d/60;
+		m[i]=d%60;
+		d=0;
+		T.clear();
+    }
+	for(i=0;i<n;i++)
+	{
+		cout<<h[i]<<" "<<m[i]<<endl;
+	}
+}
