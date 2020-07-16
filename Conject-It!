@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,t,n;
+    cin>>t;
+    for(i=0; i<t; i=i+1)
+    {
+        cin>>n;
+        cout<<"YES"<<endl;
+    }
+}
