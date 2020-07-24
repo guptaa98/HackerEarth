@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int l,s,i,num,n,count;
+	count=0;
+    scanf("%d",&n);
+    vector<int>a;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&num);
+        a.push_back(num);
+    }
+    s=a[0];
+    l=0;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]<s)
+        {
+            s=a[i];
+        }
+        if(a[i]>l)
+        {
+            l=a[i];
+        }
+    }
+    num=l-s-1;
+    s=s+1;
+    while(s<l)
+    {
+    	for(i=0;i<n;i++)
+    	{
+    		if(a[i]==s)
+    		{
+    			count++;
+                break;
+			}
+		}
+		s++;
+	}
+	if(count==num)
+	{
+		cout<<"YES";
+	}
+	else
+	{
+		cout<<"NO";
+	}
+}
